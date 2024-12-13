@@ -1,0 +1,329 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background: #272c38;
+    font-family: "Cairo", sans-serif;
+    align-items: center;
+
+}
+header #logo {
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 28px;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+
+}
+
+.container {
+    width: 100%;
+}
+
+.container .taches {
+    padding: 25px;
+    background: #CCE7FF;
+}
+.container .taches .taches-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .taches .taches-title button {
+    font-family: "Cairo", sans-serif;
+    cursor: pointer;
+    background: #2196f3;
+    border:none;
+    margin: 0 5px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 25px;
+    color: #fff;
+}
+.container .taches .taches-title span {
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+.taches-list, .boards-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 25px 0;
+}
+
+
+.taches-list .tache {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    min-width: 100px;
+
+}
+.boards-list .board {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 0 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.boards-list .board #board-title {
+    font-family: "Cairo", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    display: block;
+    font-size: 26px;
+    margin: 10px 0;
+    color: #333;
+}
+.boards-list .board .in_progress,
+.boards-list .board .completed {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+}
+.boards-list .board .see_board_div {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+.boards-list .board #see_board {
+    width: 120px;
+    height: 40px;
+    background: #272c38;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    color: #ffffff;
+    transition: all 1s ease;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.boards-list .board #see_board:hover {
+    border: 2px solid #272c38;
+    background: #ffffff;
+    color: #272c38;
+    font-weight: bold;
+}
+
+
+.container .boards {
+    padding: 25px;
+    background: #f0f0f0;
+}
+.container .boards .boards-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .boards .boards-title button {
+    font-family: "Cairo", sans-serif;
+    cursor: pointer;
+    background: #2196f3;
+    border:none;
+    margin: 0 5px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 25px;
+    color: #fff;
+}
+.container .boards .boards-title span {
+    letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+body footer {
+
+    font-family: "Poppins", sans-serif;
+    background: #2E2E2E;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.taches-list .tache .options button {
+    background: #fff;
+    cursor: pointer;
+    margin: 2.5px 0;
+    border-radius: 2.5px;
+    font-family: "Cairo", sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 16px;
+    transition: color 1s ease, background-color 1s ease;
+
+}
+
+
+
+.taches-list .tache #tache-title {
+    display: block;
+    margin: 25px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.taches-list .tache .status,
+.taches-list .tache .tache-board,
+.taches-list .tache .tache-added-date,
+.taches-list .tache .tache-finishing-date {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header a img {
+    width: 50px;
+    height: 50px;
+}
+header a#account {
+    display: flex;
+    align-items: center;
+}
+
+.tache .options {
+    margin: 25px 0;
+}
+
+.tache .options > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.options > div form,
+.options > div a {
+    width: 45%;
+    margin: 0 2px;
+}
+.options > div form button,
+.options > div a button{
+    width: 100%;
+}
+.options > div #voir {
+    background: darkorange;
+    color: #ffffff;
+    border: none;
+}
+
+.tache .options button#termine {
+    background: green;
+    color: #ffffff;
+    border: none;
+}
+
+.tache .options button#modifier {
+    background: blue;
+    color: #ffffff;
+    border: none;
+}
+
+.tache .options button#annuler {
+    background: red;
+    color: #ffffff;
+    border: none;
+}
+.options > div #voir:hover {
+    border: 2px solid darkorange;
+    color: darkorange;
+    background: #ffffff;
+}
+
+.tache .options button#termine:hover {
+    border: 2px solid green;
+    color: green;
+    background: #ffffff;
+}
+
+.tache .options button#modifier:hover {
+    border: 2px solid blue;
+    color: blue;
+    background: #ffffff;
+}
+
+.tache .options button#annuler:hover {
+    border: 2px solid red;
+    color: red;
+    background: #ffffff;
+}
+
+
+.tache .status span {
+    font-weight: bold;
+    color: #333;
+}
+
+.tache .status span#tache-status {
+    font-weight: normal;
+    color: #555;
+}
+
+.tache .tache-board span {
+    font-weight: bold;
+    color: #333;
+}
+
+.tache .tache-board span#tache-board-name {
+    font-weight: normal;
+    color: #555;
+}
+
+
+.tache .tache-board-name {
+    font-style: italic;
+    color: #888;
+}
+
+.tache .tache-added-date span {
+    font-weight: bold;
+    color: #333;
+}
+.tache .tache-added-date span#tache-date {
+    font-weight: normal;
+    color: #555;
+}
+
+.tache .tache-finishing-date span {
+    font-weight: bold;
+    color: #333;
+}
+.tache .tache-finishing-date span#finishing-date {
+    font-weight: normal;
+    color: #555;
+}

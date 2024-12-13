@@ -1,0 +1,118 @@
+/* إعدادات عامة */
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+* {
+    box-sizing: border-box;
+
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background: #272c38;
+    font-family: "Cairo", sans-serif;
+    align-items: center;
+
+}
+header #logo {
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 28px;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+
+}
+
+header a img {
+    width: 50px;
+    height: 50px;
+}
+header a#account {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+}
+
+.container h2 {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* عناصر النموذج */
+form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #333;
+    outline: none;
+}
+
+/* زر الإرسال */
+.form-group button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
+
+/* التذييل */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px;
+}

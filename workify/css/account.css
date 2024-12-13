@@ -1,0 +1,159 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+input[type=text],
+input[type=password] {
+    padding: 5px;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background: #272c38;
+    font-family: "Cairo", sans-serif;
+    align-items: center;
+
+}
+header #logo {
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 28px;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+
+}
+
+
+header #email-text {
+    font-family: "Cairo", sans-serif;
+    color: #fff;
+    font-size: 18px;
+}
+.container {
+    font-size: 26px;
+    padding: 50px;
+    min-height: calc(100vh - 102px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    background: #f0f0f0;
+}
+.container .account-section {
+    background: #ffffff;
+    border: 1px solid #000;
+    padding: 25px;
+}
+.container .account-section #titre {
+    display: block;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: "Cairo", sans-serif;
+    margin-bottom: 20px;
+}
+.container .account-section #username-form input[type=text] {
+    width: calc(100% - 108px);
+    height: 40px;
+    font-family: "Poppins", sans-serif;
+}
+.container .account-section #username-form input[type=submit] {
+    width: 90px;
+    height: 40px;
+    margin-left: 10px;
+    background: #272c38;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    color: #ffffff;
+    transition: all 1s ease;
+}
+.container .account-section #username-form input[type=submit]:hover {
+    border: 1px solid #272c38;
+    background: #ffffff;
+    color: #272c38;
+    font-weight: bold;
+}
+.container .account-section #username-form #username-form-label {
+    font-size: 19px;
+}
+.container .account-section .email-zone {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.container .account-section #email-label {
+    font-size: 19px;
+}
+.container .account-section #email-user {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+}
+.container .account-section #password-form {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.container .account-section #password-form-label {
+    font-size: 19px;
+}
+.container .account-section #password-form input[type=password] {
+    width: 100%;
+    height: 40px;
+    font-family: "Poppins", sans-serif;
+    margin: 5px 0;
+}
+.container .account-section #password-form input[type=submit] {
+    width: 90px;
+    height: 40px;
+    margin-left: calc(100% - 90px);
+    background: #272c38;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    color: #ffffff;
+    transition: all 1s ease;
+}
+.container .account-section #password-form input[type=submit]:hover {
+    border: 1px solid #272c38;
+    background: #ffffff;
+    color: #272c38;
+    font-weight: bold;
+}
+#logout-label {
+    font-size: 19px;
+}
+#logout-form {
+    display: flex;
+    margin: 25px 0;
+    justify-content: space-between;
+}
+#logout-form input[type=submit] {
+    width: 90px;
+    height: 40px;
+    background: red;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    color: #ffffff;
+    transition: all 1s ease;
+}
+#logout-form input[type=submit]:hover {
+    border: 1px solid red;
+    background: #ffffff;
+    color: red;
+    font-weight: bold;
+}

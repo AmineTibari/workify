@@ -1,0 +1,182 @@
+/* إعدادات عامة */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background: #272c38;
+    font-family: "Cairo", sans-serif;
+    align-items: center;
+
+}
+header #logo {
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 28px;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+
+}
+
+header a img {
+    width: 50px;
+    height: 50px;
+}
+header a#account {
+    display: flex;
+    align-items: center;
+}
+
+
+/* الحاوية */
+.container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+    min-height: 70vh;
+}
+
+/* قسم اللوحات */
+.container .boards {
+    background: #CCE7FF;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container .boards .boards-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container .boards .boards-title h2 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+.container .boards .boards-title button {
+    font-family: "Cairo", sans-serif;
+    cursor: pointer;
+    background: #2196f3;
+    border:none;
+    margin: 0 5px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.container .boards .boards-title button:hover {
+    background: #1e88e5;
+}
+
+/* شبكة اللوحات */
+.boards-list {
+    /*display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;*/
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 25px 0;
+}
+
+/* عنصر اللوحة */
+.boards-list .board {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.boards-list .board .board-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.boards-list .board .board-tasks {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.boards-list .board .board-tasks div {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boards-list .board button {
+    width: 120px;
+    height: 40px;
+    background: #272c38;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    color: #ffffff;
+    transition: all 1s ease;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.boards-list .board button:hover {
+    border: 2px solid #272c38;
+    background: #ffffff;
+    color: #272c38;
+    font-weight: bold;
+}
+
+/* شريط التمرير */
+.boards-list::-webkit-scrollbar {
+    height: 8px;
+}
+
+.boards-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.boards-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.boards-list::-webkit-scrollbar-track {
+    background: #CCE7FF;
+    border-radius: 4px;
+}
+
+/* التذييل */
+footer {
+    background: #2E2E2E;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
