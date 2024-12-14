@@ -3,7 +3,6 @@ session_start();
 
 $email = isset($_SESSION["email"]) ? $_SESSION["email"] : null;
 
-// الاتصال بقاعدة البيانات
 try {
     $host = "localhost";
     $dbname = "workify";
@@ -12,22 +11,20 @@ try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // إضافة لوحة جديدة
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $board_name = isset($_POST['board_name']) ? trim($_POST['board_name']) : '';
 
         if (!empty($board_name)) {
-            // استعلام لإضافة اللوحة
             $stmt_add_board = $pdo->prepare("INSERT INTO boards (board_name, email) VALUES (?, ?)");
             $stmt_add_board->execute([$board_name, $email]);
-            header("Location: dashboard.php"); // إعادة توجيه إلى صفحة عرض اللوحات بعد إضافة اللوحة
+            header("Location: dashboard.php");
             exit();
         } else {
-            echo "<p style='color:red;'>يرجى إدخال اسم اللوحة.</p>";
+            echo "<p style='color:red;'>veuillez saisir le nom du board</p>";
         }
     }
 } catch (PDOException $e) {
-    echo "خطأ في الاتصال بقاعدة البيانات: " . $e->getMessage();
+    echo "erreur: " . $e->getMessage();
 }
 ?>
 
