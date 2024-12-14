@@ -3,7 +3,6 @@ session_start();
 
 $email = isset($_SESSION["email"]) ? $_SESSION["email"] : null;
 
-// تحقق من تسجيل الدخول
 if (!$email) {
     die("Veuillez vous connecter pour accéder à vos tâches.");
 }
@@ -16,7 +15,6 @@ try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // جلب جميع المهام الخاصة بالمستخدم
     $stmt_taches = $pdo->prepare("SELECT * FROM taches WHERE email = ? ORDER BY tache_id DESC;");
     $stmt_taches->execute([$email]);
     $result_taches = $stmt_taches->fetchAll(PDO::FETCH_ASSOC);
